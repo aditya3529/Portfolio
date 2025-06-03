@@ -1,60 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditya | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Chen - Product Manager Portfolio</title>
+    <meta name="description" content="Professional Product Manager specializing in digital transformation, agile development, and user-centered design solutions.">
+    <meta name="keywords" content="Product Manager, Digital Strategy, Agile Development, User Experience, Product Development">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Aditya</div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sarah Chen</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Hello, I'm Aditya</h1>
-    <p>A Full Stack Developer with a passion for building web apps.</p>
-    <a href="#projects" class="btn">View Projects</a>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Sarah Chen</h1>
+                    <h2 class="hero-subtitle">Product Manager</h2>
+                    <p class="hero-description">
+                        Transforming ideas into innovative digital products through strategic thinking, 
+                        user-centered design, and data-driven decision making.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://pixabay.com/get/g81819a0ce44750b99ab96fd689614cd18e1359e2d0de1e39f506112d2de9108d37967665bf40764d8b48af255588f417a322365d4a54dd246cccc2f8e54a1654_1280.jpg" alt="Professional Product Manager" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>
-      I'm a software engineer skilled in JavaScript, React, Node.js, and more.
-      I enjoy crafting clean, performant web applications.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating products that make a difference</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        With over 8 years of experience in product management, I specialize in leading cross-functional teams 
+                        to deliver innovative digital solutions. My approach combines strategic vision with hands-on execution, 
+                        ensuring products not only meet market needs but exceed user expectations.
+                    </p>
+                    <p class="about-description">
+                        I thrive in dynamic environments where I can leverage data analytics, user research, and agile 
+                        methodologies to drive product success. My background spans fintech, e-commerce, and SaaS platforms, 
+                        giving me a unique perspective on diverse market challenges.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Products Launched</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Teams Led</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://pixabay.com/get/gdb5d405e2cf235f3cb1381fa4954eb18e545588c8ad2be880024e4ad0dba6e438f30d0d2b84c487f9febf9ff6840a8be5924b084e1d1cd1e92f2b9fca04f18eb_1280.jpg" alt="Modern Office Workspace" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project One</h3>
-      <p>A description of your first project. Maybe a weather app or portfolio site.</p>
-      <a href="#" target="_blank">Live Demo</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Core competencies that drive product success</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">📊</div>
+                    <h3 class="skill-title">Product Strategy</h3>
+                    <ul class="skill-list">
+                        <li>Market Research & Analysis</li>
+                        <li>Competitive Intelligence</li>
+                        <li>Product Roadmapping</li>
+                        <li>Go-to-Market Strategy</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🎯</div>
+                    <h3 class="skill-title">User Experience</h3>
+                    <ul class="skill-list">
+                        <li>User Research & Testing</li>
+                        <li>Persona Development</li>
+                        <li>Journey Mapping</li>
+                        <li>Wireframing & Prototyping</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">⚡</div>
+                    <h3 class="skill-title">Agile Development</h3>
+                    <ul class="skill-list">
+                        <li>Scrum & Kanban</li>
+                        <li>Sprint Planning</li>
+                        <li>Backlog Management</li>
+                        <li>Cross-functional Leadership</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">📈</div>
+                    <h3 class="skill-title">Data & Analytics</h3>
+                    <ul class="skill-list">
+                        <li>KPI Definition & Tracking</li>
+                        <li>A/B Testing</li>
+                        <li>SQL & Analytics Tools</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Case studies of successful product launches</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://pixabay.com/get/g540f6912de4208bb1f8d38c105209edb4209f834431ae17c3faea33d7f5b6a9f1f375d3c5c03f3aa8ee0457abef92eacb516f7faf769f53b8505c1f4d1afcc63_1280.jpg" alt="Product Development Team" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary project-btn" data-project="fintech">View Case Study</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FinTech Mobile Platform</h3>
+                        <p class="project-description">
+                            Led the development of a comprehensive mobile banking solution that increased user 
+                            engagement by 340% and reduced transaction processing time by 60%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Strategy</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Agile Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://pixabay.com/get/gd8b6d43d728eacd104a9ac7cafd37dc48996370ac9ec08cdceabba5b4586f860a0ed0261cbc10212186958a76fd189ffa12a1de3ec49e9640010bf84dd318551_1280.jpg" alt="Modern Workspace" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary project-btn" data-project="ecommerce">View Case Study</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Personalization Engine</h3>
+                        <p class="project-description">
+                            Designed and launched an AI-powered recommendation system that boosted conversion 
+                            rates by 45% and increased average order value by 30%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Personalization</span>
+                            <span class="tag">A/B Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://pixabay.com/get/g921e65bf98252600d66acb6ee7ea0b7d634600f140965e9da3d994dfaff96af66bc76a9f6eac43771c4769991fe1fbe8839c2f532e098faf0c9ff51585d6a0dc_1280.jpg" alt="Team Collaboration" class="project-img">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary project-btn" data-project="saas">View Case Study</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SaaS Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Built a comprehensive analytics platform that helped enterprise clients reduce 
+                            churn by 25% and improve customer satisfaction scores by 40%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Enterprise Solutions</span>
+                            <span class="tag">Customer Success</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Career journey and key achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Senior Product Manager</h3>
+                        <h4 class="timeline-company">TechFlow Solutions</h4>
+                        <p class="timeline-description">
+                            Leading product strategy for flagship SaaS platform serving 10,000+ enterprise clients. 
+                            Achieved 35% increase in customer retention and launched 3 major product features.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Increased monthly recurring revenue by $2.5M through strategic feature development</li>
+                            <li>Led cross-functional team of 12 engineers, designers, and analysts</li>
+                            <li>Implemented data-driven product development process reducing time-to-market by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Product Manager</h3>
+                        <h4 class="timeline-company">FinanceForward Inc.</h4>
+                        <p class="timeline-description">
+                            Managed mobile banking product suite with 500K+ active users. Successfully launched 
+                            mobile payment platform and led digital transformation initiatives.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Launched mobile payment feature adopted by 80% of user base within 6 months</li>
+                            <li>Reduced customer acquisition cost by 45% through optimized onboarding flow</li>
+                            <li>Improved app store ratings from 3.2 to 4.7 stars through UX improvements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2019</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Associate Product Manager</h3>
+                        <h4 class="timeline-company">E-commerce Solutions Ltd.</h4>
+                        <p class="timeline-description">
+                            Focused on e-commerce platform optimization and customer experience enhancement. 
+                            Drove initiatives that improved conversion rates and customer satisfaction.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Increased conversion rate by 28% through checkout process optimization</li>
+                            <li>Launched personalization features resulting in 22% increase in average order value</li>
+                            <li>Collaborated with marketing team to improve customer acquisition funnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to discuss your next product opportunity</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sarah.chen@productmanager.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/sarahchen-pm</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Sarah Chen. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
     </div>
-    <div class="project-card">
-      <h3>Project Two</h3>
-      <p>Description for another featured project. Maybe a to-do app or backend API.</p>
-      <a href="#" target="_blank">GitHub Repo</a>
-    </div>
-  </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p>Email: youremail@example.com</p>
-    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourname</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Aditya. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
