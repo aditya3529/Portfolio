@@ -149,6 +149,52 @@ function initializeContactForm() {
     });
 }
 
+// Initialize clickable project cards
+function initializeProjectCards() {
+    // First, make all project cards clickable
+    const allProjectCards = document.querySelectorAll('.project-card');
+    
+    allProjectCards.forEach((card, index) => {
+        // Define which cards should link to detail pages
+        let href = null;
+        const title = card.querySelector('h3').textContent.trim();
+        
+        if (title.includes('Insurance Policy Compliance')) {
+            href = 'project-insurance-compliance.html';
+        } else if (title.includes('E-marketplace Implementation')) {
+            href = 'project-beepkart.html';
+        } else if (title.includes('Global Content Syndication')) {
+            href = 'project-content-syndication.html';
+        }
+        
+        if (href) {
+            card.classList.add('clickable-card');
+            card.setAttribute('data-href', href);
+            card.style.cursor = 'pointer';
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            
+            // Add click handler
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Navigating to:', href); // Debug log
+                window.location.href = href;
+            });
+            
+            // Handle keyboard navigation
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    console.log('Keyboard navigation to:', href); // Debug log
+                    window.location.href = href;
+                }
+            });
+        }
+    });
+    
+    console.log('Project cards initialized'); // Debug log
+}
+
 // Optimize scroll performance with throttling
 function throttle(func, wait) {
     let timeout;
@@ -168,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeAnimations();
     createIntersectionObserver();
     initializeContactForm();
+    initializeProjectCards();
     
     // Delay typing animation slightly for better effect
     setTimeout(createTypingAnimation, 500);
